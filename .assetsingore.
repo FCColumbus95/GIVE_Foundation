@@ -1,0 +1,9 @@
+
+.git/
+.wrangler/
+.github/
+README.md
+*.zip
+.nojekyll
+wrangler.jsonc
+wrangler.toml
