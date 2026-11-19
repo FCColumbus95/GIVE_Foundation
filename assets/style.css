@@ -51,3 +51,42 @@
 .heritage{background:#ede5d5}.heritage p:not(.eyebrow):not(.large){font-size:14px}.history-intro{background:var(--forest);color:white}.history-intro h1{font-size:clamp(45px,5.5vw,72px);max-width:900px}.history-intro h1 em{color:#dcc395;font-style:normal}.history-intro .eyebrow{color:#dcc395}.history-intro .large{max-width:750px;font-size:19px;color:#e8eeea}.history-prose{max-width:900px}.history-prose>p:not(.eyebrow){font-size:17px;line-height:1.9}.history-timeline{background:#e8eee7}.history-milestones{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:40px}.history-milestones article{border-top:2px solid #b59960;padding-top:24px}.history-milestones span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#7c6033}.history-milestones h3{font:30px/1.15 'Libre Caslon Display',Georgia,serif;margin-top:15px}.history-milestones p{font-size:14px}nav a[aria-current=page]{text-decoration:underline;text-underline-offset:6px}@media(max-width:760px){.history-milestones{grid-template-columns:1fr;gap:25px}.history-intro .large{font-size:17px}.history-prose>p:not(.eyebrow){font-size:15px}}
 
 .policy-intro{padding:55px 0;background:#e8eee7}.policy-intro h1{font-size:clamp(42px,5vw,65px);margin-bottom:20px}.policy-intro>div>p:not(.eyebrow){font-size:12px}.policy-review-note{max-width:760px;padding:15px 20px;border-left:2px solid #ab8744;background:#ffffff88}.policy-layout{display:grid;grid-template-columns:230px 1fr;gap:65px;padding-top:50px;padding-bottom:60px}.policy-nav{display:flex!important;position:sticky;top:100px;flex-direction:column;align-items:stretch;gap:0;background:transparent;padding:0;box-shadow:none}.policy-nav a{font-size:12px;padding:12px 0;border-bottom:1px solid #19332f22;line-height:1.5}.policy-section{padding:0 0 38px;margin-bottom:35px;border-bottom:1px solid #19332f22}.policy-section h2{font-size:36px}.policy-section h3{font-size:18px;margin-top:25px}.policy-section p{font-size:14px;line-height:1.85;overflow-wrap:anywhere}.policy-section a{overflow-wrap:anywhere}.policy-return{font-size:12px}@media(max-width:760px){.policy-layout{grid-template-columns:1fr;gap:35px;padding-top:25px}.policy-nav{position:static;display:grid!important;grid-template-columns:1fr 1fr;gap:0 20px}.policy-nav a{font-size:11px}.policy-section h2{font-size:31px}.policy-intro{padding:40px 0}.policy-section p{font-size:13px}}
+
+/* Give the Foundation seal a clear masthead presence. */
+.header .top{min-height:128px;gap:24px}
+.header .brand{gap:20px;font-size:25px;flex-shrink:0}
+.header .brand img{width:104px;height:104px;flex:0 0 104px;border-radius:50%;object-fit:contain;box-shadow:0 3px 14px #19332f24}
+.header .brand small{font-size:11px;letter-spacing:.25em;margin-top:7px}
+.header #navigation{gap:20px}
+section[id]{scroll-margin-top:140px}
+.policy-nav{top:148px}
+@media(max-width:1100px) and (min-width:761px){
+ .header .top{gap:16px}
+ .header .brand{gap:14px;font-size:21px}
+ .header .brand img{width:88px;height:88px;flex-basis:88px}
+ .header #navigation{gap:12px}
+ .header #navigation a{font-size:10px}
+ .header .nav-give{padding:10px 12px}
+}
+@media(max-width:900px){
+ .header .top{position:relative}
+ .header .menu{display:block;padding:10px 14px;background:transparent;border:1px solid #19332f66;font-size:14px}
+ .header #navigation{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:24px;align-items:stretch;flex-direction:column;gap:14px;box-shadow:0 8px 12px #0002}
+ .header #navigation.open{display:flex}
+ .header #navigation a{font-size:14px;padding:8px}
+}
+@media(max-width:760px){
+ .header .top{min-height:98px;gap:12px}
+ .header .brand{font-size:19px;gap:12px}
+ .header .brand img{width:76px;height:76px;flex-basis:76px}
+ .header .brand small{font-size:10px;letter-spacing:.2em;margin-top:5px}
+ .header .menu{padding:9px 11px}
+ section[id]{scroll-margin-top:110px}
+}
+@media(max-width:380px){
+ .header .top{padding-inline:16px}
+ .header .brand{font-size:17px;gap:10px}
+ .header .brand img{width:68px;height:68px;flex-basis:68px}
+ .header .brand small{font-size:9px}
+ .header .menu{padding:8px;font-size:12px}
+}
