@@ -90,3 +90,31 @@ section[id]{scroll-margin-top:140px}
  .header .brand small{font-size:9px}
  .header .menu{padding:8px;font-size:12px}
 }
+
+/* Full-width cosmic identity with real, accessible navigation. */
+.cosmic-header{background:#030b20;color:#fff3d4}
+.cosmic-art{display:block;position:relative;aspect-ratio:2172/610;overflow:hidden;background:#030b20}
+.cosmic-art img{width:100%;height:auto;max-width:none;display:block}
+.cosmic-nav{background:#040e24;border-top:2px solid #dcb450;border-bottom:1px solid #dcb45066}
+.cosmic-nav-inner{min-height:76px;display:flex;align-items:center;justify-content:center;position:relative}
+.cosmic-name{display:none;color:#f1d594;text-decoration:none;font-family:Georgia,serif}
+.cosmic-nav #navigation{position:static;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:0;background:transparent;padding:0;box-shadow:none;width:100%}
+.cosmic-nav #navigation a{font:500 17px/1.3 Georgia,serif;padding:8px 30px;color:#fff3d4;white-space:nowrap;border-right:1px solid #dcb45088}
+.cosmic-nav #navigation a:hover{color:#f5c64f;text-decoration:underline;text-underline-offset:6px}
+.cosmic-nav #navigation .nav-give{background:linear-gradient(#edbd4d,#c98b1b);color:#101527;border:1px solid #ffe0a0;border-radius:4px;margin-left:28px;padding:12px 22px}
+.cosmic-nav .menu{display:none}
+section[id]{scroll-margin-top:24px}
+.policy-nav{top:24px}
+@media(max-width:1100px){.cosmic-nav #navigation a{padding-inline:20px;font-size:16px}.cosmic-nav #navigation .nav-give{margin-left:20px}}
+@media(max-width:800px){
+ .cosmic-art{aspect-ratio:1.45}
+ .cosmic-art img{position:absolute;top:0;left:-75%;width:250%}
+ .cosmic-nav-inner{min-height:68px;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+ .cosmic-name{display:block;font-size:17px}
+ .cosmic-nav .menu{display:block;background:transparent;border:1px solid #dcb450;color:#fff3d4;font-size:14px;padding:8px 12px}
+ .cosmic-nav #navigation{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0}
+ .cosmic-nav #navigation.open{display:flex}
+ .cosmic-nav #navigation a{font-size:17px;border-right:0;border-bottom:1px solid #dcb45033;padding:13px 0}
+ .cosmic-nav #navigation .nav-give{margin:15px 0 0;text-align:center;padding:13px}
+}
+@media(max-width:380px){.cosmic-nav-inner{padding-inline:16px}.cosmic-name{font-size:15px}}
