@@ -1,0 +1,22 @@
+/* Readable accountability disclosures and expanded navigation. */
+.accountability-table{overflow-x:auto;margin:24px 0;border:1px solid #19332f35}
+.accountability-table table{width:100%;border-collapse:collapse;font-size:1rem;line-height:1.65}
+.accountability-table th,.accountability-table td{padding:16px;text-align:left;vertical-align:top;border-bottom:1px solid #19332f25;min-width:180px}
+.accountability-table th{background:#143b35;color:white}
+.accountability-table td:first-child{font-weight:600;width:40%}
+.policy-section p,.policy-section li{font-size:1rem;line-height:1.8}
+.policy-checklist{padding-left:24px}.policy-checklist li{margin-bottom:18px}
+.policy-review-note{font-size:1rem!important;line-height:1.7}
+.giving-disclosure{font-size:1rem;line-height:1.7;padding:18px;border-left:3px solid #8a622b;background:#fff9}
+.cosmic-nav #navigation a{padding-inline:18px;font-size:16px}
+@media(min-width:1001px) and (max-width:1200px){.cosmic-nav #navigation a{padding-inline:12px;font-size:15px}.cosmic-nav #navigation .nav-give{margin-left:14px}}
+@media(max-width:1000px){
+.cosmic-nav-inner{min-height:68px;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.cosmic-name{display:block;font-size:17px}
+.cosmic-nav .menu{display:block;background:transparent;border:1px solid #dcb450;color:#fff3d4;font-size:14px;padding:8px 12px}
+.cosmic-nav #navigation{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0}
+.cosmic-nav #navigation.open{display:flex}
+.cosmic-nav #navigation a{font-size:17px;border-right:0;border-bottom:1px solid #dcb45033;padding:13px 0}
+.cosmic-nav #navigation .nav-give{margin:15px 0 0;text-align:center;padding:13px}
+}
+@media(max-width:600px){.accountability-table th,.accountability-table td{min-width:150px;padding:12px}.policy-nav{grid-template-columns:1fr!important}.policy-nav a{font-size:1rem}}
